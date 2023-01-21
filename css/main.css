@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/* Library */
+.container{
+    max-width: 1140px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex;
+}
+.fdc{
+    flex-direction: column;
+}
+.fw{
+    flex-wrap: wrap;
+}
+.aic{
+    align-items: center;
+}
+.aif{
+    align-items: flex-start;
+}
+.jcc{
+    justify-content: center;
+}
+.jcb{
+    justify-content: space-between;
+}
+.tac{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    gap: 32px;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 167%;
+    color: white;
+    font-family: 'Alata', sans-serif;
+}
+ul li a::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: -8px;
+    transition: all .3s;
+    background-color: white;
+}
+ul li a:hover::before{
+    width: 100%;
+}
+.box_title{
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* Library */
+
+/* header */
+.header{
+    width: 100%;
+    height: 660px;
+    padding-top: 64px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/header.png');
+}
+.header_big_text{
+    max-width: 640px;
+    font-size: 72px;
+    font-weight: 300;
+    line-height: 97%;
+    padding: 40px;
+    margin-top: 130px;
+    text-transform: uppercase;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.sub_menu{
+    display: none;
+}
+/* header */
+
+/* The leader in interactive VR */
+.vr .container{
+    position: relative;
+    margin: 160px auto 184px auto;
+}
+.vr .container img{
+    width: 100%;
+    max-width: 731px;
+    max-height: 500px;
+}
+.vr_box{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 541px;
+    max-height: 317px;
+    padding: 96px 0 0 96px;
+    background: white;
+}
+.vr_box--title{
+    margin-bottom: 25px;
+}
+.vr_box--text{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 167%;
+    opacity: 0.5;
+    color: black;
+    font-family: 'Alata', sans-serif;
+}
+/* The leader in interactive VR */
+
+/* OUR CREATIONS */
+.creation{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.create_top{
+    margin-bottom: 80px;
+}
+.btn1,.btn2{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 5px;
+    padding: 13px 40px;
+    text-transform: uppercase;
+    color: #000000;
+    background: white;
+    transition: all .2s;
+    border: 1px solid black;
+    font-family: 'Alata', sans-serif;
+}
+.btn2{
+    display: none;
+}
+.btn1:hover,
+.btn2:hover{
+    color: white;
+    background: black;
+    cursor: pointer;
+}
+.create_images{
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img_box{
+    position: relative;
+    min-width: 22.5%;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    transition: all .3s;
+    background-repeat: no-repeat;
+}
+.img_box--text{
+    position: absolute;
+    left: 40px;
+    bottom: 32px;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: white;
+}
+.img_box:nth-child(1){
+    background-image: url('../img/img1.png');
+}
+.img_box:nth-child(2){
+    background-image: url('../img/img2.png');
+}
+.img_box:nth-child(3){
+    background-image: url('../img/img3.png');
+}
+.img_box:nth-child(4){
+    background-image: url('../img/img4.png');
+}
+.img_box:nth-child(5){
+    background-image: url('../img/img5.png');
+}
+.img_box:nth-child(6){
+    background-image: url('../img/img6.png');
+}
+.img_box:nth-child(7){
+    background-image: url('../img/img7.png');
+}
+.img_box:nth-child(8){
+    background-image: url('../img/img8.png');
+}
+.img_box::before{
+    display: none;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.75071);
+}
+.img_box:hover::before{
+    display: block;
+    height: 100%;
+    cursor: pointer;
+}
+.img_box:hover .img_box--text{
+    z-index: 1;
+    color: black;
+}
+/* OUR CREATIONS */
+
+/* footer */
+.footer{
+    width: 100%;
+    margin-top: 184px;
+    padding: 44px 0 33px 0;
+    background: black;
+}
+.footer_media{
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.footer_end{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 167%;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+.footer_menus{
+    display: none;
+}
+/* footer */
